@@ -2,19 +2,19 @@
 const initialState = {
     listUser: [
         {
-            id: 123,
+            id: "123",
             name: "Nguyễn Văn A",
             phone: "0934567898",
             email: "anguyenvan@gmail.com"
         },
         {
-            id: 1234,
+            id: "1234",
             name: "Nguyễn Văn B",
             phone: "0934567899",
             email: "bnguyenvan@gmail.com"
         },
         {
-            id: 12345,
+            id: "12345",
             name: "Nguyễn Văn B",
             phone: "0934567896",
             email: "bc62nguyenvan@gmail.com"

@@ -56,7 +56,7 @@ class Form extends Component {
 
         const { listUser } = this.props;
 
-        // check id trung lap
+        // check dữ liệu trung lap
         const idFind = listUser.find((user) => {
             return user.id === this.state.id;
         });
@@ -100,13 +100,12 @@ class Form extends Component {
                 isValid = false;
             }
         });
-
-        if (phoneFind) {
-            newErrors.phone = "(*) SỐ ĐIỆN THOẠI đã tồn tại";
-            isAdd = false;
-        };
         if (idFind) {
             newErrors.id = "(*) MÃ SỐ đã tồn tại";
+            isAdd = false;
+        };
+        if (phoneFind) {
+            newErrors.phone = "(*) SỐ ĐIỆN THOẠI đã tồn tại";
             isAdd = false;
         };
         if (emailFind) {
