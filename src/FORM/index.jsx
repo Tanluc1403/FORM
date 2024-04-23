@@ -116,7 +116,13 @@ class Form extends Component {
 
         if (isAdd && isValid) {
             this.props.addUser(this.state);
-            this.props.resetUserEdit();
+            // this.props.resetUserEdit();
+            this.setState({
+                id: "",
+            name: "",
+            phone: "",
+            email: "",
+            })
         }
     };
 
@@ -319,7 +325,7 @@ render() {
                                     className="btn btn-info mr-3"
                                     onClick={this.handleSubmitUpdate}
                                 >
-                                    UP DATE
+                                    UPDATE
                                 </button>
                                 :
                                 <button
